@@ -36,13 +36,16 @@ function handleClick (ev){
  key.classList.add('playing');
  audio.currentTime = 0;
 audio.play();
+
 }
 //Le añadimos al teclado el evento:
 
 window.addEventListener('keydown', handlePlay);
-//Le añadimos el evento a cada tecla:
-keys.forEach(key=>key.addEventListener('transitionend', removeClass ))
-keys.forEach(key => key.addEventListener('click',handleClick ));
+
+//Le añadimos los eventos a cada tecla:
+
+keys.forEach (key => key.addEventListener('transitionend', removeClass ))
+keys.forEach (key => key.addEventListener('click',handleClick ));
 
 
 
